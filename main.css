@@ -9,3 +9,10 @@
 p{
     font-size: 12px;
 }
+.welcome-message{
+    position: relative;
+    top: -25px;
+    left: 10px;
+    background-color: coral;
+    width: 240px;
+}
