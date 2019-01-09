@@ -7,25 +7,61 @@ body{
 }
 .wrapper{
     width: 100%;
-    max-width: 960px;
+    
     margin: 0 auto;
 }
-.flex-container{
-    display:flex;
-    background: #fff;
-    flex-wrap: wrap-reverse;
+nav{
+    background: #333;
 }
-.box{
-    height: 100px;
-    min-width: 300px;
-    flex-grow: 1;
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
-.one{
-    background: red;
+nav a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
 }
-.two{
-    background: blue;
+nav a:hover{
+    background-color: #555;
 }
-.three{
-    background: green;
+a.tw{
+    background: url(tw.svg) no-repeat center;
+    background-size: 70%; 
+}
+a.fb{
+    background: url(fb.svg) no-repeat center;
+    background-size: 70%;
+}
+.social a{
+    text-indent: -10000px;
+}
+.social{
+    max-width: 80px;
+    margin: 0 auto;
+}
+nav ul.social{
+    flex: 1 1 0;
+    display: flex;
+}
+nav ul.social li{
+    flex: 1 1 0;
+}
+@media screen and (min-width: 768px){
+
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        flex: 1 1 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .social{
+        margin: 0;
+    }
 }
