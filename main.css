@@ -1,18 +1,29 @@
-#header{
-    position: absolute;
-    top: 0;
-    left: 0;
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
-#header h1{
-    font-size: 32px;
+body{
+    background: #eee;
 }
-p{
-    font-size: 12px;
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
-.welcome-message{
-    position: relative;
-    top: -25px;
-    left: 10px;
-    background-color: coral;
-    width: 240px;
+.flex-container{
+    display:flex;
+    background: #fff;
+}
+.box{
+    height: 100px;
+    min-width: 100px;
+}
+.one{
+    background: red;
+}
+.two{
+    background: blue;
+}
+.three{
+    background: green;
 }
